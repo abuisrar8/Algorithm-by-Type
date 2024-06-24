@@ -35,12 +35,13 @@ int main()
     int x;
     cin>>x;
     
-    mergeSort(input,0,input.size()-1);
+    //mergeSort(input,0,input.size()-1);
+    sort(input.begin(),input.end());
     print(input);
     print(binarySearch(input,0,input.size()-1,x),x);
 
-    cin>>x;
-
+    
+    
     return 0;
 }
 
@@ -93,5 +94,4 @@ void print(int pos,int x)
         return;
     }
     cout<<x<<" found at position "<<pos<<" .\n";
-
 }
